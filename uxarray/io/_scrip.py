@@ -331,8 +331,8 @@ def _detect_multigrid(ds: xr.Dataset) -> tuple[str, dict[str, dict[str, Any]]]:
 
     corner_lat_suffixes = {"cla", "corner_lat", "cornlat"}
     corner_lon_suffixes = {"clo", "corner_lon", "cornlon"}
-    center_lat_suffixes = {"center_lat", "cenlat", "gclat", "clat"}
-    center_lon_suffixes = {"center_lon", "cenlon", "gclon", "clon"}
+    center_lat_suffixes = {"center_lat", "cenlat", "gclat", "clat", "lat"}
+    center_lon_suffixes = {"center_lon", "cenlon", "gclon", "clon", "lon"}
 
     # Parse OASIS-style <grid>.<var> names
     for var_name in ds.data_vars:
